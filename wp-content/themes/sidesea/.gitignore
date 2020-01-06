@@ -33,11 +33,3 @@ sitemap.xml.gz
 bower_components/*
 node_modules/*
 npm-debug.log
-
-# Compiled CSS
-assets/css/*
-*.css.map
-
-# Compiled JS
-assets/js/*
-*.js.map
