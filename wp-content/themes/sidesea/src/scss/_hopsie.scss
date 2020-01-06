@@ -1,0 +1,187 @@
+//Contact Section
+#about {
+    display: flex;
+    min-height: 200px;
+    background: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    .about-title {
+        align-self: flex-start;
+        padding: 20px 40px;
+        color: lightgray;
+    }
+    .about-details {
+        display: flex;
+        flex-flow: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-bottom: 40px;
+        .about-icon {
+            align-self: center;
+            padding: 50px;
+            font-size: larger;
+            i {
+                color: darken($primary-color, 5%);
+            }
+        }
+        .about-info {
+            border-top: 1px solid lightgray;
+            align-self: center;
+            padding: 50px;
+            .info {
+                display: flex;
+                flex-direction: row;
+                flex-flow: nowrap;
+                padding: 10px;
+                i {
+                    align-self: center;
+                    margin-right: 20px;
+                }
+                span {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+//Contact Section
+#contact {
+    display: flex;
+    min-height: 200px;
+    background: white;
+    flex-direction: column;
+    justify-content: flex-end;
+    .contact-title {
+        align-self: flex-end;
+        padding: 20px 40px;
+        color: lightgray;
+    }
+    .contact-details {
+        display: flex;
+        flex-flow: nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+        .contact-icon {
+            align-self: center;
+            padding: 50px;
+            font-size: larger;
+            i {
+                color: darken($primary-color, 5%);
+            }
+        }
+        .contact-info {
+            border-top: 1px solid lightgray;
+            align-self: center;
+            padding: 50px;
+            .info {
+                display: flex;
+                flex-direction: row;
+                flex-flow: nowrap;
+                padding: 10px;
+                i {
+                    align-self: center;
+                    margin-right: 20px;
+                }
+                span {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+// Quote Section 
+#quote {
+    padding: 100px;
+    display: flex;
+    background: #F8F8F8;
+    color: lighten($primary-color, 10%);
+    .quote {
+        padding: 50px;
+        color: #686868;
+        font-style: italic;
+    }
+    .rightquote {
+        align-self: flex-end;
+    }
+    .leftquote {
+        align-self: flex-start;
+    }
+}
+
+// Mobile Specific Styles
+@media only screen and (max-width: 640px) {
+    //About Section
+    #about {
+        .about-title {
+            display: flex;
+            flex-direction: row;
+            flex-flow: nowrap;
+            padding: 10px;
+            i {
+                align-self: center;
+                margin-right: 10px;
+                color: darken($primary-color, 5%);
+            }
+            h2 {
+                align-self: center;
+                margin-bottom: 0;
+            }
+        }
+        .about-details {
+            .about-info {
+                flex-grow: 1;
+            }
+        }
+    }
+    //Contact Section
+    #contact {
+        .contact-title {
+            display: flex;
+            flex-direction: row;
+            flex-flow: nowrap;
+            padding: 10px;
+            align-self: flex-start;
+            i {
+                align-self: center;
+                margin-right: 10px;
+                color: darken($primary-color, 5%);
+            }
+            h2 {
+                align-self: center;
+                margin-bottom: 0;
+            }
+        }
+        .contact-details {
+            .contact-info {
+                flex-grow: 1;
+            }
+        }
+    }
+    // quote Section 
+    #quote {
+        padding: 20px;
+        display: flex;
+        background: #F8F8F8;
+        color: lighten($primary-color, 10%);
+        .quote {
+            padding: 20px;
+            color: #686868;
+            font-style: italic;
+        }
+        .rightquote {
+            align-self: flex-end;
+            i {
+                font-size: xx-large;
+            }
+        }
+        .leftquote {
+            align-self: flex-start;
+            i {
+                font-size: xx-large;
+            }
+        }
+    }
+}

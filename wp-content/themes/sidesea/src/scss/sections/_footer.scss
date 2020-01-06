@@ -1,0 +1,31 @@
+/*=Footer
+---------------------------------------------------------------------*/
+
+.site-footer {
+    // footer styles
+    #copyright-wrapper {
+        display: flex;
+        flex-basis: auto;
+        justify-content: center;
+        align-self: center;
+        background-color: darken($primary-color, 5%);
+        color: white;
+        padding: 10px;
+    }
+    #socialmedia {
+        display: flex;
+        flex-basis: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        color: white;
+        background-color: darken($primary-color, 3%);
+        a {
+            padding: 20px;
+            color: lightskyblue;
+            &:hover {
+                color: darken(lightskyblue, 10%);
+            }
+        }
+    }
+}
